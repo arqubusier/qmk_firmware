@@ -30,20 +30,34 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-                   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,
-                   KC_TRNS, KC_TRNS, KC_TRNS, KC_P,    KC_Y,
-        KC_LSHIFT, KC_A,    KC_O,    KC_E,    KC_U,    KC_I,
-                   KC_TRNS, KC_Q,    KC_J,    KC_K,    KC_X,
-                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_ENTER
+                          KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,
+                          KC_TRNS, KC_TRNS, KC_TRNS, KC_P,    KC_Y,
+               KC_LSHIFT, KC_A,    KC_O,    KC_E,    KC_U,    KC_I,
+                          KC_TRNS, KC_Q,    KC_J,    KC_K,    KC_X,
+                                   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+               KC_ENTER,
+
+                          KC_F8,   KC_F9,   KC_F10,  KC_F11,   KC_F12,
+                          KC_F,    KC_G,    KC_C,    KC_R,    KC_L,
+                          KC_D,    KC_H,    KC_T,    KC_N,    KC_S,  KC_RSHIFT,
+                          KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                                                              KC_BSPACE
     ),
     [_FN] = LAYOUT(
-                   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,
-                   KC_TRNS, KC_TRNS, KC_TRNS, KC_P,    KC_Y,
-        KC_LSHIFT, KC_A,    KC_O,    KC_E,    KC_U,    KC_I,
-                   KC_TRNS, KC_Q,    KC_J,    KC_K,    KC_X,
-                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_ENTER
+                          KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,
+                          KC_TRNS, KC_TRNS, KC_TRNS, KC_P,    KC_Y,
+               KC_LSHIFT, KC_A,    KC_O,    KC_E,    KC_U,    KC_I,
+                          KC_TRNS, KC_Q,    KC_J,    KC_K,    KC_X,
+                                   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+               KC_ENTER,
+
+                          KC_F8,   KC_F9,   KC_F10,  KC_F11,   KC_F12,
+                          KC_F,    KC_G,    KC_C,    KC_R,    KC_L,
+                          KC_D,    KC_H,    KC_T,    KC_N,    KC_S,  KC_RSHIFT,
+                          KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,
+        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+                                                              KC_BSPACE
     )
 };
 
