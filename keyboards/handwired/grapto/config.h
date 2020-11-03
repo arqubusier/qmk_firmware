@@ -40,18 +40,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { B5, B4, E6, D7, C6 }
-#define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
+#define MATRIX_ROW_PINS { F7, F6, F5, F4, F1 }
+#define MATRIX_COL_PINS { C7, D6, B7, B6, B5, E6 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
+/* Bootloader */
+#define QMK_ESC_OUTPUT C7
+#define QMK_ESC_INPUT F7
+#define QMK_LED E6
+
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN D0  // or D1, D2, D3, E6
-#define SPLIT_HAND_PIN D4
+#define SOFT_SERIAL_PIN D1  // or D1, D2, D3, E6
+#define SPLIT_HAND_PIN D2
 
 //#define BACKLIGHT_PIN B7
 //#define BACKLIGHT_LEVELS 3
